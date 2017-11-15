@@ -11,5 +11,5 @@ daily), and an action (such as compression) may be specified to be performed whe
 	if err != nil {
 		panic(err)
 	}
-  defer w.Close()
-  fmt.FPrintln(w, "Hello, world")
+    defer w.Close()
+    fmt.FPrintln(w, "Hello, world")

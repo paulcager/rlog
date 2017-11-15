@@ -3,7 +3,6 @@
 package rlog
 
 import (
-	"errors"
 	"fmt"
 	"io"
 	"os"
@@ -12,9 +11,6 @@ import (
 	"strings"
 	"time"
 )
-
-// ErrClosed is the error used for write operations on a closed pipe.
-var ErrClosedPipe = errors.New("write on closed pipe")
 
 // A RotationFunction can be called after the Writer is rotated.
 type RotationFunction func(filename string)
